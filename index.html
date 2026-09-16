@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DXDL Track 2 · planner board</title>
+<style>
+:root{font-family:Inter,Arial,sans-serif;color:#1b3148;background:#f4f7fa}*{box-sizing:border-box}body{margin:0}header{background:#142f4d;color:white;padding:28px max(24px,calc((100vw - 1540px)/2));}h1{font-size:25px;margin:0 0 8px}header p{margin:0;color:#d0dce9;line-height:1.5}.shell{max-width:1580px;margin:auto;padding:23px 24px 50px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.eyebrow{text-transform:uppercase;letter-spacing:.11em;font-size:11px;font-weight:800;color:#5a7288}.note{font-size:13px;color:#536b7c}.progress{height:8px;background:#dfe8ee;border-radius:12px;overflow:hidden;margin:14px 0 28px}.progress>div{height:100%;width:0;background:#267e91;transition:width .2s}.weeks{display:grid;grid-template-columns:repeat(8,minmax(70px,1fr));gap:5px;margin:13px 0 24px}.week{background:white;border:1px solid #d9e3ea;border-radius:9px;padding:10px 6px;text-align:center;color:#435e74;font-size:12px}.week b{display:block;color:#183955;font-size:14px;margin-bottom:3px}.board{display:grid;grid-template-columns:repeat(5,minmax(235px,1fr));gap:13px;align-items:start;overflow-x:auto;padding-bottom:12px}.lane{background:#e8eff4;border-radius:13px;padding:12px;min-height:430px}.lane h2{font-size:15px;display:flex;justify-content:space-between;align-items:center;margin:2px 4px 13px}.lane h2 small{color:#5c7385;font-size:12px}.card{background:#fff;border-radius:10px;border:1px solid #dae3e9;border-left:4px solid #659cb0;padding:13px;margin-bottom:10px;box-shadow:0 2px 5px #1839550a}.card[data-squad=A]{border-left-color:#5277b3}.card[data-squad=B]{border-left-color:#8d6fb6}.card[data-squad=C]{border-left-color:#bb8560}.card[data-squad=All]{border-left-color:#2b8a7b}.card.done{opacity:.58}.card.done .task{text-decoration:line-through}.meta{display:flex;justify-content:space-between;color:#61788b;font-size:11px;font-weight:700;letter-spacing:.02em}.task{font-size:14px;line-height:1.35;font-weight:700;margin:9px 0}.detail{font-size:12px;color:#536c7d;line-height:1.45;margin:0 0 10px}.card label{display:flex;align-items:center;gap:7px;font-size:12px;color:#31516a;cursor:pointer}.card input{accent-color:#267e91;width:16px;height:16px}.decision{margin-top:24px;background:#fff;border:1px solid #dce4e9;border-radius:12px;padding:18px 20px}.decision h2{font-size:16px;margin:0 0 12px}.decision-grid{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:12px}.decision-item{background:#fff6df;border-radius:8px;padding:12px 14px;font-size:12px;line-height:1.5}.decision-item b{display:block;font-size:13px;color:#6f511e;margin-bottom:4px}.footer{margin-top:20px;color:#6a7b88;font-size:12px;line-height:1.5}@media(max-width:1150px){.board{grid-template-columns:repeat(5,235px)}.decision-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.shell{padding:18px 14px}.weeks{grid-template-columns:repeat(4,1fr)}.decision-grid{grid-template-columns:1fr}header{padding:23px 14px}}
+</style>
+</head>
+<body>
+<header><h1>DXDL Track 2 · planner board</h1><p>Three staggered squad design sprints → one cross-squad comparison → sharpened direction guidance</p></header>
+<main class="shell">
+ <div class="top"><div><div class="eyebrow">Draft · relative weeks</div><div class="note">Check off cards as work completes. Progress is saved in this browser.</div></div><strong id="count" aria-live="polite">0 / 17 complete</strong></div>
+ <div class="progress" aria-label="Completion"><div id="bar"></div></div>
+ <div class="weeks" aria-label="Eight-week planning baseline"><div class="week"><b>W1</b>A aligns</div><div class="week"><b>W2</b>A designs · B aligns*</div><div class="week"><b>W3</b>A critiques · B designs · C aligns*</div><div class="week"><b>W4</b>A ready · B critiques · C designs</div><div class="week"><b>W5</b>B ready · C critiques</div><div class="week"><b>W6</b>C ready</div><div class="week"><b>W7</b>Converge</div><div class="week"><b>W8</b>Consolidate</div></div>
+ <div class="board" id="board" aria-label="Work by stage"></div>
+ <section class="decision"><h2>Decisions to settle before dates are fixed</h2><div class="decision-grid"><div class="decision-item"><b>Squad offsets</b>Calendar starts B/C alignment a week before the preceding squad's critique. Confirm whether “starts” refers to design or alignment.</div><div class="decision-item"><b>Flow choices and sharing</b>Choose three representative customer flows, plus the file location and person who shares each.</div><div class="decision-item"><b>Actual dates</b>Place relative weeks around squad and core DXDL lead availability; book the three 55-minute critiques.</div><div class="decision-item"><b>Phase 4</b>Week 8 mentions Phase 4, but the document defines only Phases 0–3. Confirm any readiness check and engineering participant.</div></div></section>
+ <div class="footer">* B/C alignment weeks follow the draft calendar; the prose handoff rule differs. Source: KLM DXDL Track 2.pdf, pp. 1–3. This track covers design only.</div>
+</main>
+<script>
+const stages=['Align','Design','Critique','Refine & ready','Converge & close'];
+const cards=[
+['01','Align','All','W1','Freeze DXDL foundations','Agree pillars, principles and references. · DXDL leads'],
+['02','Align','All','W1','Select three complementary flows','Cover varied customer journeys across squads. · DXDL leads + squad leads'],
+['03','Align','A','W1','Name lead and select flow','Record the nominated lead and Squad A flow.'],
+['07','Align','B','W2*','Name lead and select flow','Record the nominated lead and Squad B flow.'],
+['11','Align','C','W3*','Name lead and select flow','Record the nominated lead and Squad C flow.'],
+['04','Design','A','W2','Design flow at high fidelity','Document colour, shape, layout and hierarchy decisions.'],
+['08','Design','B','W3','Design flow at high fidelity','Document decisions against all direction pillars.'],
+['12','Design','C','W4','Design flow at high fidelity','Document decisions against all direction pillars.'],
+['05','Critique','A','W3','DXDL lead critique','55 minutes; per-pillar verdict and concrete changes.'],
+['09','Critique','B','W4','DXDL lead critique','55 minutes; per-pillar verdict and concrete changes.'],
+['13','Critique','C','W5','DXDL lead critique','55 minutes; per-pillar verdict and concrete changes.'],
+['06','Refine & ready','A','W3–4','Refine and confirm ready','Apply changes and capture the interpretation record.'],
+['10','Refine & ready','B','W4–5','Refine and confirm ready','Apply changes and capture the interpretation record.'],
+['14','Refine & ready','C','W5–6','Refine and confirm ready','Apply changes and capture the interpretation record.'],
+['15','Converge & close','All','W7','Compare three ready flows','Assess colour, shape, layout and hierarchy side by side.'],
+['16','Converge & close','All','W8','Sharpen direction guidance','Resolve inconsistent interpretation of core directions.'],
+['17','Converge & close','All','W8','Capture reference cases','Save 2–3 real examples per core direction.']
+];
+const key='klm-dxdl-track-2-board-v1';let checked={};try{checked=JSON.parse(localStorage.getItem(key)||'{}')}catch{}
+const root=document.getElementById('board');
+for(const stage of stages){const lane=document.createElement('section');lane.className='lane';const subset=cards.filter(c=>c[1]===stage);lane.innerHTML=`<h2>${stage}<small>${subset.length} cards</small></h2>`;for(const [id,_,squad,week,task,detail] of subset){const c=document.createElement('article');c.className='card'+(checked[id]?' done':'');c.dataset.squad=squad;c.innerHTML=`<div class="meta"><span>${squad==='All'?'Shared':'Squad '+squad}</span><span>${week}</span></div><div class="task"></div><p class="detail"></p><label><input type="checkbox" aria-label="Complete ${id}" ${checked[id]?'checked':''}>Done</label>`;c.querySelector('.task').textContent=task;c.querySelector('.detail').textContent=detail;c.querySelector('input').addEventListener('change',e=>{checked[id]=e.target.checked;c.classList.toggle('done',e.target.checked);try{localStorage.setItem(key,JSON.stringify(checked))}catch{}update()});lane.append(c)}root.append(lane)}
+function update(){const n=cards.filter(c=>checked[c[0]]).length;document.getElementById('count').textContent=`${n} / ${cards.length} complete`;document.getElementById('bar').style.width=(100*n/cards.length)+'%'}update();
+</script>
+</body></html>
