@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+<title id="title">DXDL Track 2 planner board</title><desc id="desc">Eight-week design track with five stages: Align, Design, Critique, Refine and ready, Converge and close; three squads A, B and C, shared work, and four open decisions.</desc>
+<rect x="0" y="0" width="1600" height="1200" rx="0" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1600" height="130" rx="0" fill="#16324f" stroke="none" stroke-width="1"/>
+<text x="48" y="57" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="start">DXDL TRACK 2</text>
+<text x="48" y="91" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#d5e2ee" text-anchor="start">Design sprint planner board  /  draft baseline</text>
+<text x="48" y="174" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#59748a" text-anchor="start">EIGHT-WEEK VIEW</text>
+<rect x="48" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="61" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W1</text>
+<text x="61" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">A aligns</text>
+<rect x="237" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="250" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W2</text>
+<text x="250" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">A designs</text>
+<text x="250" y="256" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">B aligns*</text>
+<rect x="426" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="439" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W3</text>
+<text x="439" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">A critiques</text>
+<text x="439" y="256" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">B designs · C aligns*</text>
+<rect x="615" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="628" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W4</text>
+<text x="628" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">A ready</text>
+<text x="628" y="256" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">B critiques · C designs</text>
+<rect x="804" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="817" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W5</text>
+<text x="817" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">B ready</text>
+<text x="817" y="256" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">C critiques</text>
+<rect x="993" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1006" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W6</text>
+<text x="1006" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">C ready</text>
+<rect x="1182" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1195" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W7</text>
+<text x="1195" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">Converge</text>
+<rect x="1371" y="190" width="180" height="84" rx="9" fill="#ffffff" stroke="#d9e4ec" stroke-width="1"/>
+<text x="1384" y="216" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#173a57" text-anchor="start">W8</text>
+<text x="1384" y="239" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526c81" text-anchor="start">Consolidate</text>
+<rect x="48" y="305" width="295" height="586" rx="12" fill="#eaf0f5" stroke="none" stroke-width="1"/>
+<rect x="48" y="305" width="295" height="48" rx="12" fill="#607f9b" stroke="none" stroke-width="1"/>
+<rect x="48" y="335" width="295" height="18" rx="0" fill="#607f9b" stroke="none" stroke-width="1"/>
+<text x="63" y="335" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start">ALIGN</text>
+<rect x="58" y="366" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="58" y="366" width="5" height="93" rx="2" fill="#2a8a7d" stroke="none" stroke-width="1"/>
+<text x="72" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2a8a7d" text-anchor="start">SHARED</text>
+<text x="319" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W1</text>
+<text x="72" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Freeze DXDL foundations</text>
+<text x="72" y="438" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Agree pillars, principles and references.</text>
+<rect x="58" y="469" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="58" y="469" width="5" height="93" rx="2" fill="#2a8a7d" stroke="none" stroke-width="1"/>
+<text x="72" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2a8a7d" text-anchor="start">SHARED</text>
+<text x="319" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W1</text>
+<text x="72" y="517" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Select three flows</text>
+<text x="72" y="541" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Cover varied customer journeys.</text>
+<rect x="58" y="572" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="58" y="572" width="5" height="93" rx="2" fill="#547ab3" stroke="none" stroke-width="1"/>
+<text x="72" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#547ab3" text-anchor="start">SQUAD A</text>
+<text x="319" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W1</text>
+<text x="72" y="620" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Name lead + select flow</text>
+<text x="72" y="644" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Record lead and representative flow.</text>
+<rect x="58" y="675" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="58" y="675" width="5" height="93" rx="2" fill="#9275b8" stroke="none" stroke-width="1"/>
+<text x="72" y="695" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#9275b8" text-anchor="start">SQUAD B</text>
+<text x="319" y="695" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W2*</text>
+<text x="72" y="723" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Name lead + select flow</text>
+<text x="72" y="747" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Record lead and representative flow.</text>
+<rect x="58" y="778" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="58" y="778" width="5" height="93" rx="2" fill="#bf8b61" stroke="none" stroke-width="1"/>
+<text x="72" y="798" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#bf8b61" text-anchor="start">SQUAD C</text>
+<text x="319" y="798" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W3*</text>
+<text x="72" y="826" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Name lead + select flow</text>
+<text x="72" y="850" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Record lead and representative flow.</text>
+<rect x="352" y="305" width="295" height="586" rx="12" fill="#eaf0f5" stroke="none" stroke-width="1"/>
+<rect x="352" y="305" width="295" height="48" rx="12" fill="#5588a4" stroke="none" stroke-width="1"/>
+<rect x="352" y="335" width="295" height="18" rx="0" fill="#5588a4" stroke="none" stroke-width="1"/>
+<text x="367" y="335" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start">DESIGN</text>
+<rect x="362" y="366" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="362" y="366" width="5" height="93" rx="2" fill="#547ab3" stroke="none" stroke-width="1"/>
+<text x="376" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#547ab3" text-anchor="start">SQUAD A</text>
+<text x="623" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W2</text>
+<text x="376" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Design high-fidelity flow</text>
+<text x="376" y="438" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Log decisions against all pillars.</text>
+<rect x="362" y="469" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="362" y="469" width="5" height="93" rx="2" fill="#9275b8" stroke="none" stroke-width="1"/>
+<text x="376" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#9275b8" text-anchor="start">SQUAD B</text>
+<text x="623" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W3</text>
+<text x="376" y="517" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Design high-fidelity flow</text>
+<text x="376" y="541" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Log decisions against all pillars.</text>
+<rect x="362" y="572" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="362" y="572" width="5" height="93" rx="2" fill="#bf8b61" stroke="none" stroke-width="1"/>
+<text x="376" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#bf8b61" text-anchor="start">SQUAD C</text>
+<text x="623" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W4</text>
+<text x="376" y="620" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Design high-fidelity flow</text>
+<text x="376" y="644" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Log decisions against all pillars.</text>
+<rect x="656" y="305" width="295" height="586" rx="12" fill="#eaf0f5" stroke="none" stroke-width="1"/>
+<rect x="656" y="305" width="295" height="48" rx="12" fill="#836fb0" stroke="none" stroke-width="1"/>
+<rect x="656" y="335" width="295" height="18" rx="0" fill="#836fb0" stroke="none" stroke-width="1"/>
+<text x="671" y="335" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start">CRITIQUE</text>
+<rect x="666" y="366" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="666" y="366" width="5" height="93" rx="2" fill="#547ab3" stroke="none" stroke-width="1"/>
+<text x="680" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#547ab3" text-anchor="start">SQUAD A</text>
+<text x="927" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W3</text>
+<text x="680" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">DXDL lead critique</text>
+<text x="680" y="438" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">55 min; verdict and refine actions.</text>
+<rect x="666" y="469" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="666" y="469" width="5" height="93" rx="2" fill="#9275b8" stroke="none" stroke-width="1"/>
+<text x="680" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#9275b8" text-anchor="start">SQUAD B</text>
+<text x="927" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W4</text>
+<text x="680" y="517" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">DXDL lead critique</text>
+<text x="680" y="541" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">55 min; verdict and refine actions.</text>
+<rect x="666" y="572" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="666" y="572" width="5" height="93" rx="2" fill="#bf8b61" stroke="none" stroke-width="1"/>
+<text x="680" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#bf8b61" text-anchor="start">SQUAD C</text>
+<text x="927" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W5</text>
+<text x="680" y="620" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">DXDL lead critique</text>
+<text x="680" y="644" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">55 min; verdict and refine actions.</text>
+<rect x="960" y="305" width="295" height="586" rx="12" fill="#eaf0f5" stroke="none" stroke-width="1"/>
+<rect x="960" y="305" width="295" height="48" rx="12" fill="#4f987f" stroke="none" stroke-width="1"/>
+<rect x="960" y="335" width="295" height="18" rx="0" fill="#4f987f" stroke="none" stroke-width="1"/>
+<text x="975" y="335" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start">REFINE &amp; READY</text>
+<rect x="970" y="366" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="970" y="366" width="5" height="93" rx="2" fill="#547ab3" stroke="none" stroke-width="1"/>
+<text x="984" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#547ab3" text-anchor="start">SQUAD A</text>
+<text x="1231" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W3–4</text>
+<text x="984" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Refine + confirm ready</text>
+<text x="984" y="438" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Apply changes; capture decisions.</text>
+<rect x="970" y="469" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="970" y="469" width="5" height="93" rx="2" fill="#9275b8" stroke="none" stroke-width="1"/>
+<text x="984" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#9275b8" text-anchor="start">SQUAD B</text>
+<text x="1231" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W4–5</text>
+<text x="984" y="517" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Refine + confirm ready</text>
+<text x="984" y="541" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Apply changes; capture decisions.</text>
+<rect x="970" y="572" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="970" y="572" width="5" height="93" rx="2" fill="#bf8b61" stroke="none" stroke-width="1"/>
+<text x="984" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#bf8b61" text-anchor="start">SQUAD C</text>
+<text x="1231" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W5–6</text>
+<text x="984" y="620" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Refine + confirm ready</text>
+<text x="984" y="644" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Apply changes; capture decisions.</text>
+<rect x="1264" y="305" width="295" height="586" rx="12" fill="#eaf0f5" stroke="none" stroke-width="1"/>
+<rect x="1264" y="305" width="295" height="48" rx="12" fill="#ba835c" stroke="none" stroke-width="1"/>
+<rect x="1264" y="335" width="295" height="18" rx="0" fill="#ba835c" stroke="none" stroke-width="1"/>
+<text x="1279" y="335" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="start">CONVERGE &amp; CLOSE</text>
+<rect x="1274" y="366" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="1274" y="366" width="5" height="93" rx="2" fill="#2a8a7d" stroke="none" stroke-width="1"/>
+<text x="1288" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2a8a7d" text-anchor="start">SHARED</text>
+<text x="1535" y="386" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W7</text>
+<text x="1288" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Compare three ready flows</text>
+<text x="1288" y="438" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Assess interpretations side by side.</text>
+<rect x="1274" y="469" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="1274" y="469" width="5" height="93" rx="2" fill="#2a8a7d" stroke="none" stroke-width="1"/>
+<text x="1288" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2a8a7d" text-anchor="start">SHARED</text>
+<text x="1535" y="489" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W8</text>
+<text x="1288" y="517" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Sharpen direction guidance</text>
+<text x="1288" y="541" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">Resolve inconsistent application.</text>
+<rect x="1274" y="572" width="275" height="93" rx="9" fill="#ffffff" stroke="#d9e3e9" stroke-width="1"/>
+<rect x="1274" y="572" width="5" height="93" rx="2" fill="#2a8a7d" stroke="none" stroke-width="1"/>
+<text x="1288" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2a8a7d" text-anchor="start">SHARED</text>
+<text x="1535" y="592" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#5b7183" text-anchor="end">W8</text>
+<text x="1288" y="620" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#18334d" text-anchor="start">Capture reference cases</text>
+<text x="1288" y="644" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#587084" text-anchor="start">2–3 examples per core direction.</text>
+<rect x="48" y="922" width="1504" height="204" rx="12" fill="#ffffff" stroke="#dae4ea" stroke-width="1"/>
+<text x="70" y="957" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#173a57" text-anchor="start">DECISIONS BEFORE BASELINING</text>
+<rect x="70" y="975" width="352" height="125" rx="8" fill="#fff5df" stroke="none" stroke-width="1"/>
+<text x="84" y="1000" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#795a24" text-anchor="start">Squad offsets</text>
+<text x="84" y="1026" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">Calendar starts B/C alignment before the</text>
+<text x="84" y="1045" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">preceding critique; confirm the start rule.</text>
+<rect x="437" y="975" width="352" height="125" rx="8" fill="#fff5df" stroke="none" stroke-width="1"/>
+<text x="451" y="1000" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#795a24" text-anchor="start">Flow choices + sharing</text>
+<text x="451" y="1026" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">Choose flows, file location and sharing owner.</text>
+<rect x="804" y="975" width="352" height="125" rx="8" fill="#fff5df" stroke="none" stroke-width="1"/>
+<text x="818" y="1000" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#795a24" text-anchor="start">Actual dates</text>
+<text x="818" y="1026" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">Fit relative weeks to squad and DXDL lead</text>
+<text x="818" y="1045" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">availability; book the three critiques.</text>
+<rect x="1171" y="975" width="352" height="125" rx="8" fill="#fff5df" stroke="none" stroke-width="1"/>
+<text x="1185" y="1000" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#795a24" text-anchor="start">Phase 4</text>
+<text x="1185" y="1026" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">W8 names Phase 4 but defines only 0–3;</text>
+<text x="1185" y="1045" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#526678" text-anchor="start">confirm readiness check and engineering role.</text>
+<text x="48" y="1160" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="400" fill="#61798a" text-anchor="start">* B/C alignment weeks follow the PDF calendar; its prose offset rule differs. Source: KLM DXDL Track 2.pdf, pp. 1–3. Design only.</text>
+</svg>
