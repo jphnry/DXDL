@@ -82,6 +82,14 @@ button,input,select{font-family:inherit}
 /* Match section spacing between sign-in controls and planner columns. */
 .sync-strip{margin-bottom:0}
 .board{margin-top:32px}
+
+/* Sign-in form follows the KLM text, field, and focus tokens. */
+.sync-strip strong{font-size:14px;line-height:22px}
+.sync-strip form label{font-size:16px;line-height:24px;font-weight:500;color:#002746}
+.sync-strip input{box-sizing:border-box;border:1.5px solid #EBE2DB;border-radius:16px;background:#F5F1ED;padding:10px 16px;color:#002746;font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:24px;font-weight:500}
+.sync-strip input::placeholder{color:#3E3B3A;font-weight:400;opacity:1}
+.sync-strip input:hover{border-color:#D4CCC6}
+.sync-strip input:focus-visible{border-color:#0077CD;outline:2px solid #0077CD;outline-offset:2px}
 </style>
 </head>
 <body>
