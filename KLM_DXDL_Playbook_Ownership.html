@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KLM DXDL Playbook · Planner board</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#18334d;background:#f7fbff}*{box-sizing:border-box}body{margin:0}button,select{font:inherit}button{cursor:pointer}.hero{background:#050505;color:#fff}.wrap{max-width:1600px;margin:auto;padding:0 48px}.brand{padding-top:30px;padding-bottom:52px}.brand p{font-size:14px;margin:0 0 13px}.brand h1{font-size:30px;margin:0;line-height:1.1}.schedule{padding-bottom:52px}.schedule h2{font-size:14px;margin:0 0 15px}.milestones{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px}.milestone{background:#fff;color:#002746;border-radius:9px;min-height:104px;padding:15px 13px;border-top:5px solid #005496}.milestone:nth-last-child(2){border-top-color:#287d52}.milestone:last-child{border-top-color:#009fd9}.milestone strong{font-size:15px;display:block;margin-bottom:13px}.milestone span{font-size:13px;color:#405c70;line-height:1.25;display:block}.schedule h3{font-size:14px;margin:21px 0 0}.main{padding-top:0;padding-bottom:45px}.board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:-1px}.lane{background:#edf5fa;border-radius:12px;min-height:1190px;padding:0 10px 52px}.lane-head{margin:0 -10px 11px;background:var(--lane);color:#fff;min-height:48px;padding:14px 16px;border-radius:10px 10px 0 0;display:flex;align-items:center;justify-content:space-between;gap:8px}.lane-head h3{font-size:16px;margin:0}.lane-head small{font-weight:700;font-size:11px;white-space:nowrap}.card{background:#fff;border:1px solid #d9e3e9;border-left:5px solid #607f9b;border-radius:9px;min-height:207px;padding:13px 14px;margin-bottom:11px}.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:6px}.card h4{font-size:17px;margin:0 0 13px;line-height:1.3}.owner{background:var(--owner);border-radius:15px;color:#fff;font-size:12px;font-weight:700;padding:5px 11px;white-space:nowrap;min-width:55px;text-align:center}.owner-select{display:none;max-width:100px;border:1px solid #95a9b8;border-radius:6px;padding:3px}.checks{display:grid;gap:10px}.checks label{display:flex;align-items:center;gap:10px;font-size:14px;color:#405c70;min-height:23px}.checks input{width:17px;height:17px;accent-color:#005496;margin:0;flex:none}.checks label:has(input:checked) .task{text-decoration:line-through;color:#718797}.ownership-title{font-size:15px;color:#005496;margin:60px 0 18px}.ownership{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.owner-panel{background:#fff;border:1px solid #d9e3e9;border-top:5px solid var(--owner);border-radius:9px;min-height:320px;padding:16px}.owner-panel header{display:flex;align-items:center;justify-content:space-between}.owner-panel .owner{display:inline-block}.owner-panel small{color:#587184;font-weight:700}.owner-panel ul{padding-left:22px;margin:21px 0}.owner-panel li{font-size:14px;margin:0 0 13px;line-height:1.3}.owner-panel li::marker{color:var(--owner)}.toolbar{position:sticky;bottom:0;background:#002746;color:#fff;z-index:3;box-shadow:0 -3px 15px #00274622}.toolbar .wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.toolbar button{border:1px solid #a8cada;border-radius:7px;padding:9px 13px;background:#fff;color:#002746;font-weight:700}.toolbar button.primary{background:#009fd9;color:#fff;border-color:#009fd9}.toolbar p{font-size:12px;margin:0 0 0 auto;color:#e4f2f8;max-width:550px;line-height:1.35}.editable [data-edit]{outline:1px dashed #009fd9;outline-offset:3px;border-radius:2px}.editable [data-edit]:focus{outline:2px solid #009fd9;background:#e7f7fc;color:#002746}.editable .owner{display:none}.editable .owner-select{display:block}.edit-hint{display:none;font-size:13px;color:#567186;margin:0 0 14px}.editable .edit-hint{display:block}.footer{font-size:13px;color:#587184;margin:24px 0 0;line-height:1.5}@media(max-width:1050px){.milestones{grid-template-columns:repeat(4,1fr)}.board,.ownership{grid-template-columns:repeat(2,minmax(0,1fr))}.lane{min-height:0}}@media(max-width:650px){.wrap{padding-left:16px;padding-right:16px}.brand{padding-top:22px;padding-bottom:35px}.brand h1{font-size:25px}.milestones{grid-template-columns:repeat(2,1fr)}.board,.ownership{grid-template-columns:1fr}.toolbar p{margin-left:0}.ownership-title{margin-top:36px}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="wrap brand"><p data-edit="eyebrow"></p><h1 data-edit="title"></h1></div><div class="wrap schedule"><h2 data-edit="target"></h2><div id="milestones" class="milestones"></div><h3 data-edit="sectionHeading"></h3></div></div>
+<main class="wrap main"><p class="edit-hint">Edit the outlined text or change an owner. Your edits save in this browser; download the HTML to publish them for everyone.</p><div id="board" class="board"></div><h2 class="ownership-title" data-edit="ownershipHeading"></h2><div id="ownership" class="ownership"></div><p class="footer" data-edit="footer"></p></main>
+<div class="toolbar"><div class="wrap"><button id="edit" type="button" aria-pressed="false">Edit board</button><button id="download" class="primary" type="button">Download updated HTML</button><button id="reset" type="button">Reset local text edits</button><p>Hosted checkmarks and in-page edits save per browser. Download and commit a revised HTML file to share wording and ownership changes.</p></div></div>
+<script id="board-data" type="application/json">
+{
+  "eyebrow":"AFKL DIGITAL EXPERIENCE DESIGN",
+  "title":"KLM DXDL PLAYBOOK",
+  "target":"Plan for completion by 31 October 2026",
+  "sectionHeading":"Section Checklist",
+  "ownershipHeading":"OWNERSHIP BY SECTION",
+  "footer":"16 sections have an individual lead. Example conceptual screens is assigned to all three designers.",
+  "milestones":[
+    {"date":"25 SEP","description":"Directional guidelines & design foundations"},
+    {"date":"02 OCT","description":"Language elements & brand elements"},
+    {"date":"09 OCT","description":"Imagery & tone of voice"},
+    {"date":"16 OCT","description":"Final guideline run-through with DXDL Ambassadors"},
+    {"date":"23 OCT","description":"Final accessibility checks"},
+    {"date":"27 OCT","description":"Sign-off"},
+    {"date":"29 OCT","description":"Launch to team(s)"}
+  ],
+  "lanes":[
+    {"name":"DIRECTION","color":"#005496","sections":[
+      {"id":"brand-strategy","name":"Brand strategy","owner":"JP","tasks":["Content finished","Guidelines finalised","Signed off"]},
+      {"id":"foundations","name":"Foundations","owner":"JP","tasks":["Content finished","Guidelines finalised","Signed off"]},
+      {"id":"logo","name":"Logo","owner":"Danny","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"color","name":"Color","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"typography","name":"Typography","owner":"JP","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]}
+    ]},
+    {"name":"VISUAL LANGUAGE","color":"#002746","sections":[
+      {"id":"shape-language","name":"Shape language","owner":"Danny","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"iconography","name":"Iconography","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"illustration","name":"Illustration","owner":"JP","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"sky-gradient","name":"Sky Gradient","owner":"Danny","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]}
+    ]},
+    {"name":"IMAGERY & EXPRESSION","color":"#005496","sections":[
+      {"id":"photography","name":"Photography","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"motion","name":"Motion","owner":"Danny","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"image-ratio","name":"Image ratio","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"tone-of-voice","name":"Tone of voice","owner":"JP","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]}
+    ]},
+    {"name":"SYSTEM & APPLICATION","color":"#287d52","sections":[
+      {"id":"spacing","name":"Spacing","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"radius","name":"Radius","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"borders-dividers","name":"Borders & dividers","owner":"Yin","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]},
+      {"id":"conceptual-screens","name":"Example conceptual screens","owner":"All","tasks":["Content finished","Guidelines finalised","Accessibility notes","Signed off"]}
+    ]}
+  ]
+}
+</script>
+<script>
+(() => {
+  'use strict';
+  const initial = JSON.parse(document.getElementById('board-data').textContent);
+  const fingerprint = Array.from(JSON.stringify(initial)).reduce((hash,char)=>Math.imul(hash^char.charCodeAt(0),16777619)>>>0,2166136261).toString(36);
+  const contentKey = 'klm-dxdl-playbook-ownership-content-'+fingerprint;
+  const checkKey = 'klm-dxdl-playbook-ownership-checks-v1';
+  let data = structuredClone(initial), checks = {}, editing = false;
+  try { const saved = JSON.parse(localStorage.getItem(contentKey)); if (saved && Array.isArray(saved.lanes) && saved.lanes.length === 4) data = saved; } catch {}
+  try { checks = JSON.parse(localStorage.getItem(checkKey)) || {}; } catch {}
+  const colors = {JP:'#002746', Danny:'#005496', Yin:'#287d52', All:'#002746'};
+  const el = (name, className, content) => { const n=document.createElement(name); if(className)n.className=className; if(content!==undefined)n.textContent=content; return n; };
+  const save = () => { try { localStorage.setItem(contentKey, JSON.stringify(data)); } catch {} };
+  const bind = (node, read, write) => {
+    node.dataset.edit=''; node.textContent=read(); node.contentEditable=editing ? 'true':'false';
+    node.addEventListener('blur', () => { if (!editing) return; const value=node.textContent.trim(); if(value) {write(value);save();} else node.textContent=read(); renderOwnership(); });
+    node.addEventListener('keydown', event => { if(event.key==='Enter'){event.preventDefault();node.blur();} });
+    return node;
+  };
+  function renderStatic(){
+    for(const key of ['eyebrow','title','target','sectionHeading','ownershipHeading','footer']){
+      const node=document.querySelector(`[data-edit="${key}"]`); node.textContent=data[key]; node.contentEditable=editing ? 'true':'false';
+      if(!node.dataset.bound){ node.dataset.bound='yes'; node.addEventListener('blur',()=>{if(!editing)return; const v=node.textContent.trim(); if(v){data[key]=v;save()}else node.textContent=data[key]}); node.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();node.blur()}}); }
+    }
+  }
+  function renderMilestones(){const root=document.getElementById('milestones');root.replaceChildren();data.milestones.forEach((m,i)=>{
+    const card=el('div','milestone');card.append(bind(el('strong'),()=>m.date,v=>m.date=v),bind(el('span'),()=>m.description,v=>m.description=v));root.append(card);
+  });}
+  function renderBoard(){const board=document.getElementById('board');board.replaceChildren();data.lanes.forEach((lane,li)=>{
+    const column=el('section','lane');column.style.setProperty('--lane',lane.color);
+    const head=el('div','lane-head');const title=bind(el('h3'),()=>lane.name,v=>lane.name=v);head.append(title,el('small','',`${lane.sections.length} SECTIONS`));column.append(head);
+    lane.sections.forEach((section,si)=>{
+      const card=el('article','card');const top=el('div','card-top');const name=bind(el('h4'),()=>section.name,v=>section.name=v);
+      const owner=el('span','owner',section.owner);owner.style.setProperty('--owner',colors[section.owner]);
+      const select=el('select','owner-select');select.setAttribute('aria-label',`Owner of ${section.name}`);
+      for(const choice of ['JP','Danny','Yin','All']){const option=el('option','',choice);option.value=choice;select.append(option)}select.value=section.owner;
+      select.addEventListener('change',()=>{section.owner=select.value;owner.textContent=section.owner;owner.style.setProperty('--owner',colors[section.owner]);save();renderOwnership()});
+      top.append(name,owner,select);card.append(top);
+      const list=el('div','checks');section.tasks.forEach((task,ti)=>{
+        const label=el('label');const input=el('input');input.type='checkbox';input.checked=!!checks[`${section.id}::${ti}`];input.setAttribute('aria-label',`${section.name}: ${task}`);
+        input.addEventListener('change',()=>{checks[`${section.id}::${ti}`]=input.checked;try{localStorage.setItem(checkKey,JSON.stringify(checks))}catch{}});
+        const wording=bind(el('span','task'),()=>section.tasks[ti],v=>section.tasks[ti]=v);label.append(input,wording);list.append(label);
+      });card.append(list);column.append(card);
+    });board.append(column);
+  });}
+  function renderOwnership(){const root=document.getElementById('ownership');root.replaceChildren();for(const who of ['JP','Danny','Yin','All']){
+    const items=data.lanes.flatMap(l=>l.sections.filter(s=>s.owner===who));const panel=el('section','owner-panel');panel.style.setProperty('--owner',colors[who]);
+    const head=el('header');head.append(el('span','owner',who),el('small','',`${items.length} section${items.length===1?'':'s'}`));panel.append(head);
+    const list=el('ul');for(const item of items)list.append(el('li','',item.name));panel.append(list);root.append(panel);
+  }}
+  function render(){renderStatic();renderMilestones();renderBoard();renderOwnership();document.body.classList.toggle('editable',editing);document.getElementById('edit').textContent=editing?'Finish editing':'Edit board';document.getElementById('edit').setAttribute('aria-pressed',String(editing));}
+  document.getElementById('edit').addEventListener('click',()=>{if(editing&&document.activeElement?.isContentEditable)document.activeElement.blur();editing=!editing;render()});
+  document.getElementById('reset').addEventListener('click',()=>{if(!confirm('Replace your local text and owner edits with the published version? Checkmarks will be kept.'))return;data=structuredClone(initial);try{localStorage.removeItem(contentKey)}catch{}editing=false;render()});
+  document.getElementById('download').addEventListener('click',()=>{
+    if(document.activeElement?.isContentEditable)document.activeElement.blur();
+    const embedded=document.getElementById('board-data');const old=embedded.textContent;
+    embedded.textContent='\n'+JSON.stringify(data,null,2).replace(/</g,'\\u003c')+'\n';
+    const file='<!doctype html>\n'+document.documentElement.outerHTML;
+    embedded.textContent=old;
+    const url=URL.createObjectURL(new Blob([file],{type:'text/html;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download='KLM_DXDL_Playbook_Ownership.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  render();
+})();
+</script>
+</body>
+</html>
