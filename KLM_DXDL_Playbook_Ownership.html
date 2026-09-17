@@ -248,7 +248,7 @@ button,input,select{font-family:inherit}
   async function refreshEditor(session){
     const user=session?.user,form=document.getElementById('sign-in'),out=document.getElementById('sign-out'),importButton=document.getElementById('import-local');
     form.style.display=user?'none':'flex';out.style.display=user?'inline-block':'none';importButton.style.display='none';enableEditors(false);
-    if(!user){status('Viewing shared progress. Sign in to edit.');return;}
+    if(!user){status('You are viewing shared progress. Editor? Sign in to edit.');return;}
     const {data:editor,error}=await client.from('playbook_editors').select('email').eq('email',user.email.toLowerCase()).maybeSingle();
     if(error){status('Could not check editor access: '+error.message);return;}
     enableEditors(!!editor);
