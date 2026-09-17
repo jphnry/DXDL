@@ -9,11 +9,32 @@
 .sync-strip{margin:18px 0 8px;background:#e7f7fc;border:1px solid #9ed8eb;border-radius:9px;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}.sync-strip strong{font-size:13px;color:#002746}.sync-strip form{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-left:auto}.sync-strip input{font:inherit;border:1px solid #9bb4c3;border-radius:6px;padding:8px;min-width:220px}.sync-strip button{border:0;border-radius:6px;padding:9px 12px;background:#005496;color:#fff;font-weight:700}.sync-strip #sign-out{display:none}.sync-strip button:disabled{opacity:.5}.checks input:disabled{cursor:not-allowed;opacity:.55}
 .progress-overview{margin:4px 0 14px;background:#fff;border:1px solid #d9e3e9;border-radius:12px;padding:18px 20px}.progress-overview h2{font-size:16px;color:#005496;margin:0 0 13px}.progress-summary{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:8px}.progress-summary strong{font-size:20px;color:#002746}.progress-summary span{color:#587184;font-size:13px}.progress-meter{display:block;width:100%;height:12px;appearance:none;border:0;border-radius:20px;overflow:hidden;background:#e2edf3}.progress-meter::-webkit-progress-bar{background:#e2edf3;border-radius:20px}.progress-meter::-webkit-progress-value{background:var(--meter,#009fd9);border-radius:20px}.progress-meter::-moz-progress-bar{background:var(--meter,#009fd9);border-radius:20px}.owner-progress{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}.owner-progress-item{--meter:#005496}.owner-progress-item strong{font-size:13px;color:#002746}.owner-progress-item span{float:right;font-size:12px;color:#587184}.owner-progress-item .progress-meter{height:8px;margin-top:7px}.section-progress{font-size:12px;color:#587184;margin:11px 0 0;font-weight:700}@media(max-width:650px){.owner-progress{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .design-sync{margin-top:16px;padding:14px 16px;background:#e7f7fc;border:1px solid #9ed8eb;border-left:5px solid #009fd9;border-radius:9px}.design-sync-heading{display:flex;gap:10px 20px;align-items:baseline;flex-wrap:wrap;color:#002746}.design-sync-heading strong{font-size:13px;letter-spacing:.03em}.design-sync-heading span{font-size:14px}.design-sync-dates{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.design-sync-dates time{display:inline-block;background:#fff;color:#005496;border:1px solid #bddfe9;border-radius:14px;padding:5px 10px;font-size:12px;font-weight:700}
+
+/* Warm canvas and white board surface, following the brand balance reference. */
+:root{background:#F5F1ED;color:#102E48}
+body{background:#F5F1ED}
+.page-shell{max-width:1660px;margin:36px auto 58px;background:#fff;border-radius:30px;overflow:hidden;box-shadow:0 16px 48px rgba(16,46,72,.06)}
+.hero{background:#fff;color:#102E48;border-bottom:1px solid #E9E6E2}
+.brand{padding-top:48px;padding-bottom:36px}
+.brand p{color:#005496;font-weight:700;letter-spacing:.04em}
+.brand h1{font-size:clamp(30px,3vw,44px);line-height:1.13;max-width:900px}
+.brand .working-file{margin-top:24px;padding:12px 20px;background:#D9EDFC;color:#102E48;border-radius:12px;text-decoration:none;font-weight:700}
+.brand .working-file:hover,.brand .working-file:focus-visible{background:#C4E3F8;color:#102E48;text-decoration:underline}
+.schedule{padding-top:30px;padding-bottom:28px}
+.milestone{border:1px solid #E5E1DC;border-top:5px solid #005496;border-radius:12px}
+.lane{background:#F5F1ED}
+.card{border-color:#E4E0DB;border-left-color:#607f9b;border-radius:12px}
+.progress-overview,.owner-panel{border-color:#E4E0DB}
+.sync-strip,.design-sync{background:#F0F8FC}
+@media(max-width:1720px){.page-shell{margin-left:24px;margin-right:24px}}
+@media(max-width:650px){.page-shell{margin:12px 10px 26px;border-radius:20px}.brand{padding-top:32px;padding-bottom:28px}.brand .working-file{margin-top:20px}.schedule{padding-top:26px}}
 </style>
 </head>
 <body>
+<div class="page-shell">
 <div class="hero"><div class="wrap brand"><p data-edit="eyebrow"></p><h1 data-edit="title"></h1><a class="working-file" href="https://www.figma.com/design/Nm5p3PuhudINISBot1AqXu/KLM-Digital-Brand---Design-Direction?node-id=711-1164" target="_blank" rel="noopener noreferrer">Working file in Figma ↗</a></div></div><div class="wrap schedule"><h2 data-edit="target"></h2><div id="milestones" class="milestones"></div><section class="design-sync" aria-label="Weekly design sync"><div class="design-sync-heading"><strong>DESIGN SYNC CATCH-UP</strong><span>Every Tuesday · 11:30–12:00 · 30 minutes</span></div><div class="design-sync-dates" aria-label="Upcoming design sync dates"><time datetime="2026-09-22">22 Sep</time><time datetime="2026-09-29">29 Sep</time><time datetime="2026-10-06">6 Oct</time><time datetime="2026-10-13">13 Oct</time><time datetime="2026-10-20">20 Oct</time><time datetime="2026-10-27">27 Oct</time></div></section><h3 data-edit="sectionHeading"></h3></div>
 <main class="wrap main"><p class="edit-hint">Edit the outlined text or change an owner. Text edits save in this browser; download and commit the HTML to publish them. Checklist progress saves for everyone.</p><section class="progress-overview" aria-labelledby="progress-heading"><h2 id="progress-heading">Guidelines Progress</h2><div class="progress-summary"><strong id="overall-progress">Loading progress…</strong><span id="overall-count"></span></div><progress id="overall-meter" class="progress-meter" max="100" value="0" aria-label="Overall playbook progress"></progress><div id="owner-progress" class="owner-progress"></div></section><div class="sync-strip" role="status"><strong id="sync-status">Connecting shared progress…</strong><form id="sign-in"><label for="editor-email">Editor email</label><input id="editor-email" type="email" autocomplete="email" required placeholder="you@example.com"><button type="submit">Email sign-in link</button></form><button id="sign-out" type="button">Sign out</button><button id="import-local" type="button" style="display:none">Import earlier checks</button></div><div id="board" class="board"></div><h2 class="ownership-title" data-edit="ownershipHeading"></h2><div id="ownership" class="ownership"></div><p class="footer" data-edit="footer"></p></main>
+</div>
 <script id="board-data" type="application/json">
 {
   "eyebrow":"AFKL DIGITAL EXPERIENCE DESIGN",
