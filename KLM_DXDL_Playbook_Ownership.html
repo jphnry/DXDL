@@ -28,6 +28,34 @@ body{background:#F5F1ED}
 .sync-strip,.design-sync{background:#F0F8FC}
 @media(max-width:1720px){.page-shell{margin-left:24px;margin-right:24px}}
 @media(max-width:650px){.page-shell{margin:12px 10px 26px;border-radius:20px}.brand{padding-top:32px;padding-bottom:28px}.brand .working-file{margin-top:20px}.schedule{padding-top:26px}}
+
+/* KLM digital brand tokens from the shared design language. */
+@font-face{font-family:"KLM Universal Sans Display";src:url("https://afkl-dxdl.github.io/kl/assets/fonts/KLM%20UniversalSans-Display-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"KLM Universal Sans Display";src:url("https://afkl-dxdl.github.io/kl/assets/fonts/KLM%20UniversalSans-Display-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"KLM Universal Sans Text";src:url("https://afkl-dxdl.github.io/kl/assets/fonts/KLM%20UniversalSans-Text-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"KLM Universal Sans Text";src:url("https://afkl-dxdl.github.io/kl/assets/fonts/KLM%20UniversalSans-Text-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"KLM Universal Sans Text";src:url("https://afkl-dxdl.github.io/kl/assets/fonts/KLM%20UniversalSans-Text-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--klm-navy:#002746;--klm-blue:#0077CD;--klm-pale:#D0E7F6;--klm-highlight:#EAF4FB;--klm-warm:#F5F1ED;--klm-divider:#EBE2DB;--klm-secondary:#3E3B3A;font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;color:var(--klm-navy);background:var(--klm-warm)}
+body{background:var(--klm-warm)}
+button,input,select{font-family:inherit}
+.page-shell{border-radius:32px}
+.hero{color:var(--klm-navy);border-bottom-color:var(--klm-divider)}
+.brand h1,.schedule h2,.schedule h3,.progress-overview h2,.ownership-title,.lane-head h3,.card h4,.milestone strong{font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-weight:500}
+.brand h1{color:var(--klm-navy)}
+.brand .working-file{background:var(--klm-pale);color:var(--klm-navy);font-weight:500}
+.brand .working-file:hover,.brand .working-file:focus-visible{background:#A5D5EF;color:var(--klm-navy)}
+.milestone{border-color:var(--klm-divider);border-top-color:#005496}
+.milestone:nth-last-child(2){border-top-color:#287D52}
+.milestone:last-child{border-top-color:#009FD9}
+.lane{background:var(--klm-warm)}
+.card{border-color:var(--klm-divider);border-left-color:#607f9b;border-radius:16px}
+.progress-overview,.owner-panel{border-color:var(--klm-divider)}
+.sync-strip,.design-sync{background:var(--klm-highlight);border-color:var(--klm-pale)}
+.design-sync{border-left-color:#009FD9}
+.design-sync-dates time{border-color:var(--klm-pale)}
+.milestone span,.checks label,.owner-panel small,.section-progress,.progress-summary span,.owner-progress-item span{color:var(--klm-secondary)}
+.progress-meter,.progress-meter::-webkit-progress-bar{background:var(--klm-highlight)}
+.progress-meter::-webkit-progress-value{background:var(--meter,var(--klm-blue))}.progress-meter::-moz-progress-bar{background:var(--meter,var(--klm-blue))}
 </style>
 </head>
 <body>
