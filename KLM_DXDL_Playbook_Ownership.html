@@ -128,14 +128,17 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 .planner-close{color:#fff}
 .planner-close:hover{background:#ffffff22}
 .planner-overlay-list{display:flex;flex-direction:column}
-.planner-overlay-list .menu-item{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:17px 0;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:clamp(21px,3vw,34px);line-height:1.2}
+.planner-overlay-list .menu-item{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:17px 0;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:24px;line-height:1.2}
 .planner-overlay-list .current{color:#fff}
 .planner-overlay-list .pending{color:#ffffffc2}
 .planner-overlay-list small{font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;white-space:nowrap;color:#D0E7F6}
 .planner-overlay-list .external-item{margin-top:24px;border-top:1px solid #ffffff33}
 .planner-overlay-footer{margin-top:auto;padding-top:32px;font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.5;color:#D0E7F6}
+.planner-overlay-footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.planner-overlay-footer a:hover{color:#fff}
+.planner-overlay-footer a:focus-visible{outline:2px solid #fff;outline-offset:3px}
 body.planner-menu-open{overflow:hidden}
-@media(max-width:767px){.brand-top{flex-direction:column;align-items:stretch;gap:8px}.brand-top > p{flex:none;order:2}.planner-nav-toggle{align-self:flex-end;order:1;margin:0 0 12px}.planner-overlay-inner{width:calc(100vw - 20px);padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:22px}.planner-overlay-list small{font-size:11px}}
+@media(max-width:767px){.brand-top{flex-direction:column;align-items:stretch;gap:8px}.brand-top > p{flex:none;order:2}.planner-nav-toggle{align-self:flex-end;order:1;margin:0 0 12px}.planner-overlay-inner{width:calc(100vw - 20px);padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:clamp(18px,5vw,22px)}.planner-overlay-list small{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.planner-overlay,.planner-overlay-inner,.planner-nav-toggle .burger span,.planner-close .burger span{transition:none}}
 </style>
 </head>
@@ -155,7 +158,7 @@ body.planner-menu-open{overflow:hidden}
       <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
       <span class="menu-item pending external-item">Visit AF DXDL <small>Coming soon</small></span>
     </nav>
-    <p class="planner-overlay-footer">Questions about AFKL DXDL? Contact John-Paul Henry</p>
+    <p class="planner-overlay-footer">Questions about AFKL DXDL? Contact <a href="mailto:john-paul.henry@klm.com">John-Paul Henry</a></p>
   </div>
 </div>
 <script id="board-data" type="application/json">
