@@ -109,30 +109,51 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 
 /* Brand blue 500 for the four key section headings. */
 .brand > p:first-child,.schedule h2,.progress-overview h2,.ownership-title{color:#0077CD}
-/* Planner navigation sits in the header on desktop and mobile. */
-.brand-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.brand-top > p{flex:1 1 240px}
-.planner-nav{position:relative;z-index:10;margin-left:auto}
-.planner-nav summary{list-style:none;display:flex;align-items:center;gap:10px;min-height:44px;padding:10px 16px;border:1px solid #D0E7F6;border-radius:12px;background:#fff;color:#003D6D;font-weight:700;cursor:pointer;white-space:nowrap}
-.planner-nav summary::-webkit-details-marker{display:none}
-.planner-nav summary:hover,.planner-nav[open] summary{background:#EAF4FB}
-.planner-nav summary:focus-visible,.planner-nav a:focus-visible{outline:2px solid #0077CD;outline-offset:2px}
-.planner-nav .chevron{font-size:18px;line-height:1;transition:transform .15s ease}
-.planner-nav[open] .chevron{transform:rotate(180deg)}
-.planner-menu{position:absolute;right:0;top:calc(100% + 8px);width:min(330px,calc(100vw - 40px));padding:8px;background:#fff;border:1px solid #EBE2DB;border-radius:16px;box-shadow:0 12px 32px #00274624}
-.planner-menu a,.planner-menu .menu-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;border-radius:9px;color:#002746;font-size:14px;line-height:1.3;text-decoration:none}
-.planner-menu a:hover{background:#EAF4FB;color:#0077CD}
-.planner-menu .current{background:#EAF4FB;color:#003D6D;font-weight:700}
-.planner-menu .pending{color:#665E59}
-.planner-menu small{font-size:11px;white-space:nowrap;color:#665E59}
-.planner-menu .divider{border-top:1px solid #EBE2DB;margin:6px 8px}
-@media(max-width:650px){.brand-top{gap:8px}.planner-nav{margin-bottom:16px}}
+/* AFKL DXDL navigation uses the reference site's two-line burger at every width. */
+.brand-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand-top > p{flex:1 1 200px}
+.planner-nav-toggle,.planner-close{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:4px 8px;border:0;border-radius:12px;background:transparent;color:#002746;font-weight:700;white-space:nowrap;cursor:pointer}
+.planner-nav-toggle{margin-left:auto}
+.planner-nav-toggle:hover{background:#EAF4FB}
+.planner-nav-toggle:focus-visible,.planner-close:focus-visible{outline:2px solid #0077CD;outline-offset:2px}
+.planner-nav-toggle .burger,.planner-close .burger{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:36px;height:36px;flex:none}
+.planner-nav-toggle .burger span,.planner-close .burger span{display:block;width:18px;height:1.5px;border-radius:1px;background:currentColor;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.planner-close .burger span:first-child{transform:translateY(3.25px) rotate(45deg)}
+.planner-close .burger span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
+.planner-overlay{position:fixed;inset:0;z-index:100;overflow-y:auto;padding:28px clamp(24px,5vw,72px) 40px;background:linear-gradient(155deg,#005496 0%,#002746 80%);color:#fff;visibility:hidden;opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .3s cubic-bezier(.16,1,.3,1),transform .3s cubic-bezier(.16,1,.3,1),visibility .3s}
+.planner-overlay.is-open{visibility:visible;opacity:1;transform:translateY(0);pointer-events:auto}
+.planner-overlay-inner{max-width:820px;margin:0 auto}
+.planner-overlay-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:clamp(36px,7vh,76px);font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:18px;font-weight:500}
+.planner-close{color:#fff}
+.planner-close:hover{background:#ffffff22}
+.planner-overlay-list{display:flex;flex-direction:column}
+.planner-overlay-list .menu-item{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:17px 0;border-bottom:1px solid #ffffff33;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:clamp(21px,3vw,34px);line-height:1.2}
+.planner-overlay-list .current{color:#fff}
+.planner-overlay-list .pending{color:#ffffffc2}
+.planner-overlay-list small{font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;white-space:nowrap;color:#D0E7F6}
+.planner-overlay-list .external-item{margin-top:24px;border-top:1px solid #ffffff33}
+body.planner-menu-open{overflow:hidden}
+@media(max-width:650px){.brand-top{gap:8px}.planner-nav-toggle{margin-bottom:8px}.planner-overlay{padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:22px}.planner-overlay-list small{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.planner-overlay,.planner-nav-toggle .burger span,.planner-close .burger span{transition:none}}
 </style>
 </head>
 <body>
 <div class="page-shell">
-<div class="hero"><div class="wrap brand"><div class="brand-top"><p data-edit="eyebrow"></p><nav class="planner-nav" aria-label="Planner boards"><details><summary>Planner boards <span class="chevron" aria-hidden="true">⌄</span></summary><div class="planner-menu"><span class="menu-item current" aria-current="page">KLM Digital Brand &amp; Design Direction</span><span class="menu-item pending">DXDL Track 2 Planning <small>Coming soon</small></span><span class="menu-item pending">KLM Brix <small>Coming soon</small></span><span class="menu-item pending">KLM Aero <small>Coming soon</small></span><span class="menu-item pending">KLM Prototype <small>Coming soon</small></span><div class="divider" role="separator"></div><span class="menu-item pending">Visit AF DXDL <small>Coming soon</small></span></div></details></nav></div><h1 data-edit="title"></h1><p class="brand-description">The Digital Brand &amp; Design Guidelines will help unify brand, design, content and the experience for all KLM digital creators — designers, content designers, developers — ensuring a consistent visual and experience language.</p><a class="working-file" href="https://www.figma.com/design/Nm5p3PuhudINISBot1AqXu/KLM-Digital-Brand---Design-Direction?node-id=711-1164" target="_blank" rel="noopener noreferrer">Working file in Figma ↗</a></div></div><div class="wrap schedule"><h2 data-edit="target"></h2><div id="milestones" class="milestones"></div><section class="design-sync" aria-label="Weekly design sync"><div class="design-sync-heading"><strong>Design Sync Catch-Up</strong><span>Every Tuesday · 11:30–12:00 · 30 minutes</span></div><div class="design-sync-dates" aria-label="Upcoming design sync dates"><time datetime="2026-09-22">22 Sep</time><time datetime="2026-09-29">29 Sep</time><time datetime="2026-10-06">6 Oct</time><time datetime="2026-10-13">13 Oct</time><time datetime="2026-10-20">20 Oct</time><time datetime="2026-10-27">27 Oct</time></div></section></div>
+<div class="hero"><div class="wrap brand"><div class="brand-top"><p data-edit="eyebrow"></p><button class="planner-nav-toggle" type="button" aria-label="Open AFKL DXDL navigation" aria-expanded="false" aria-controls="planner-overlay"><span>AFKL DXDL</span><span class="burger" aria-hidden="true"><span></span><span></span></span></button></div><h1 data-edit="title"></h1><p class="brand-description">The Digital Brand &amp; Design Guidelines will help unify brand, design, content and the experience for all KLM digital creators — designers, content designers, developers — ensuring a consistent visual and experience language.</p><a class="working-file" href="https://www.figma.com/design/Nm5p3PuhudINISBot1AqXu/KLM-Digital-Brand---Design-Direction?node-id=711-1164" target="_blank" rel="noopener noreferrer">Working file in Figma ↗</a></div></div><div class="wrap schedule"><h2 data-edit="target"></h2><div id="milestones" class="milestones"></div><section class="design-sync" aria-label="Weekly design sync"><div class="design-sync-heading"><strong>Design Sync Catch-Up</strong><span>Every Tuesday · 11:30–12:00 · 30 minutes</span></div><div class="design-sync-dates" aria-label="Upcoming design sync dates"><time datetime="2026-09-22">22 Sep</time><time datetime="2026-09-29">29 Sep</time><time datetime="2026-10-06">6 Oct</time><time datetime="2026-10-13">13 Oct</time><time datetime="2026-10-20">20 Oct</time><time datetime="2026-10-27">27 Oct</time></div></section></div>
 <main class="wrap main"><p class="edit-hint">Edit the outlined text or change an owner. Text edits save in this browser; download and commit the HTML to publish them. Checklist progress saves for everyone.</p><section class="progress-overview" aria-labelledby="progress-heading"><h2 id="progress-heading">Guidelines Progress</h2><div class="progress-summary"><strong id="overall-progress">Loading progress…</strong><span id="overall-count"></span></div><progress id="overall-meter" class="progress-meter" max="100" value="0" aria-label="Overall playbook progress"></progress><div id="owner-progress" class="owner-progress"></div></section><div class="sync-strip" role="status"><strong id="sync-status">Connecting shared progress…</strong><form id="sign-in"><label for="editor-email">enter editor's email</label><input id="editor-email" type="email" autocomplete="email" required placeholder="Enter your email address"><button type="submit">Email sign-in link</button></form><button id="sign-out" type="button">Sign out</button><button id="import-local" type="button" style="display:none">Import earlier checks</button></div><div id="board" class="board"></div><h2 class="ownership-title" data-edit="ownershipHeading"></h2><div id="ownership" class="ownership"></div><p class="footer" data-edit="footer"></p></main>
+</div>
+<div id="planner-overlay" class="planner-overlay" role="dialog" aria-modal="true" aria-label="AFKL DXDL navigation" aria-hidden="true">
+  <div class="planner-overlay-inner">
+    <div class="planner-overlay-top"><span>AFKL DXDL</span><button class="planner-close" type="button" aria-label="Close navigation"><span class="burger" aria-hidden="true"><span></span><span></span></span></button></div>
+    <nav class="planner-overlay-list" aria-label="Planner boards">
+      <span class="menu-item current" aria-current="page">KLM Digital Brand &amp; Design Direction <small>Current board</small></span>
+      <span class="menu-item pending">DXDL Track 2 Planning <small>Coming soon</small></span>
+      <span class="menu-item pending">KLM Brix <small>Coming soon</small></span>
+      <span class="menu-item pending">KLM Aero <small>Coming soon</small></span>
+      <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
+      <span class="menu-item pending external-item">Visit AF DXDL <small>Coming soon</small></span>
+    </nav>
+  </div>
 </div>
 <script id="board-data" type="application/json">
 {
@@ -314,6 +335,35 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
     client.auth.getSession().then(({data:{session}})=>refreshEditor(session));
     loadProgress();setInterval(()=>{if(document.visibilityState==='visible')loadProgress()},12000);
   }
+})();
+</script>
+<script>
+(() => {
+  const toggle=document.querySelector('.planner-nav-toggle');
+  const overlay=document.getElementById('planner-overlay');
+  const close=overlay.querySelector('.planner-close');
+  function setOpen(open){
+    overlay.classList.toggle('is-open',open);
+    overlay.setAttribute('aria-hidden',String(!open));
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?'Close AFKL DXDL navigation':'Open AFKL DXDL navigation');
+    document.body.classList.toggle('planner-menu-open',open);
+    (open?close:toggle).focus();
+  }
+  toggle.addEventListener('click',()=>setOpen(true));
+  close.addEventListener('click',()=>setOpen(false));
+  overlay.addEventListener('click',event=>{if(event.target===overlay)setOpen(false)});
+  document.addEventListener('keydown',event=>{
+    if(!overlay.classList.contains('is-open'))return;
+    if(event.key==='Escape'){event.preventDefault();setOpen(false)}
+    else if(event.key==='Tab'){
+      const focusables=Array.from(overlay.querySelectorAll('a[href],button:not([disabled])'));
+      if(!focusables.length)return;
+      const first=focusables[0],last=focusables[focusables.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}
+    }
+  });
 })();
 </script>
 </body>
