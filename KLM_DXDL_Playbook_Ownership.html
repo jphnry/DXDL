@@ -155,7 +155,8 @@ body.planner-menu-open{overflow:hidden}
 .site-topbar .brand-top > p{margin:0;color:#0077CD;font-size:14px;font-weight:700;letter-spacing:.04em;line-height:1.35}
 .page-shell{margin-top:32px}
 @media(max-width:1720px){.site-topbar{margin-left:24px;margin-right:24px}}
-@media(max-width:767px){.site-topbar{margin:12px 10px 0;padding:10px 16px;border-radius:20px}.site-topbar .brand-top{min-height:0}.site-topbar .planner-nav-toggle > span:first-child{display:none}.page-shell{margin-top:32px}}
+.mobile-title-break{display:none}
+@media(max-width:767px){.site-topbar{margin:12px 10px 0;padding:10px 16px;border-radius:20px}.site-topbar .brand-top{min-height:44px;flex-direction:row;align-items:center;flex-wrap:nowrap;gap:8px}.site-topbar .brand-top > p{flex:1 1 auto;min-width:0;order:0}.site-topbar .planner-nav-toggle{align-self:center;order:0;margin:0 0 0 auto;flex:none}.site-topbar .planner-nav-toggle > span:first-child{display:none}.mobile-title-break{display:initial}.page-shell{margin-top:32px}}
 </style>
 </head>
 <body>
@@ -282,6 +283,10 @@ body.planner-menu-open{overflow:hidden}
 
   for(const key of ['eyebrow','title','target','ownershipHeading','footer'])
     document.querySelector(`[data-edit="${key}"]`).textContent=data[key];
+  const eyebrow=document.querySelector('[data-edit="eyebrow"]');
+  if(eyebrow.textContent==='AFKL DIGITAL EXPERIENCE DESIGN'){
+    eyebrow.replaceChildren(document.createTextNode('AFKL DIGITAL'),Object.assign(document.createElement('br'),{className:'mobile-title-break'}),document.createTextNode('EXPERIENCE DESIGN'));
+  }
 
   const milestones=document.getElementById('milestones');
   for(const milestone of data.milestones){
