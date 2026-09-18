@@ -132,13 +132,21 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 .planner-overlay-list .current{color:#fff}
 .planner-overlay-list .pending{color:#ffffffc2}
 .planner-overlay-list small{font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;white-space:nowrap;color:#D0E7F6}
-.planner-overlay-list .external-item{margin-top:24px;border-top:1px solid #ffffff33}
+.planner-group summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;list-style:none;cursor:pointer;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:24px;font-weight:500;color:#fff}
+.planner-group summary::-webkit-details-marker{display:none}
+.planner-group summary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.planner-group .nav-chevron{font-size:22px;line-height:1;transition:transform .2s ease}
+.planner-group[open] .nav-chevron{transform:rotate(180deg)}
+.planner-group .planner-subitems{margin:2px 0 10px 3px;padding-left:18px;border-left:2px solid #ffffff33}
+.planner-overlay-list .planner-subitems .menu-item{padding:12px 0;font-size:18px}
+.planner-group.af-group{margin-top:18px;padding-top:12px;border-top:1px solid #ffffff33}
+.planner-overlay-list .hub-item{margin-top:22px}
 .planner-overlay-footer{margin-top:auto;padding-top:32px;font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.5;color:#D0E7F6}
 .planner-overlay-footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .planner-overlay-footer a:hover{color:#fff}
 .planner-overlay-footer a:focus-visible{outline:2px solid #fff;outline-offset:3px}
 body.planner-menu-open{overflow:hidden}
-@media(max-width:767px){.brand-top{flex-direction:column;align-items:stretch;gap:8px}.brand-top > p{flex:none;order:2}.planner-nav-toggle{align-self:flex-end;order:1;margin:0 0 12px}.planner-overlay-inner{width:calc(100vw - 20px);padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:clamp(18px,5vw,22px)}.planner-overlay-list small{font-size:11px}}
+@media(max-width:767px){.brand-top{flex-direction:column;align-items:stretch;gap:8px}.brand-top > p{flex:none;order:2}.planner-nav-toggle{align-self:flex-end;order:1;margin:0 0 12px}.planner-overlay-inner{width:calc(100vw - 20px);padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:clamp(18px,5vw,22px)}.planner-group summary{font-size:clamp(18px,5vw,22px)}.planner-overlay-list .planner-subitems .menu-item{padding:11px 0;font-size:clamp(16px,4.5vw,18px)}.planner-overlay-list small{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.planner-overlay,.planner-overlay-inner,.planner-nav-toggle .burger span,.planner-close .burger span{transition:none}}
 </style>
 </head>
@@ -151,13 +159,27 @@ body.planner-menu-open{overflow:hidden}
   <div class="planner-overlay-inner">
     <div class="planner-overlay-top"><span>AFKL DXDL</span><button class="planner-close" type="button" aria-label="Close navigation"><span class="burger" aria-hidden="true"><span></span><span></span></span></button></div>
     <nav class="planner-overlay-list" aria-label="Planner boards">
-      <span class="menu-item current" aria-current="page">KLM Digital Brand &amp; Design Direction <small>Current board</small></span>
-      <span class="menu-item pending">DXDL Track 2 Planning <small>Coming soon</small></span>
-      <span class="menu-item pending">KLM Brix <small>Coming soon</small></span>
-      <span class="menu-item pending">KLM Aero <small>Coming soon</small></span>
-      <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
-      <span class="menu-item pending external-item">Visit AF DXDL <small>Coming soon</small></span>
-      <span class="menu-item pending">Main DXDL Hub <small>Coming soon</small></span>
+      <details class="planner-group" open>
+        <summary>KLM DXDL <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="planner-subitems">
+          <span class="menu-item current" aria-current="page">KLM Digital Brand &amp; Design Direction <small>Current board</small></span>
+          <span class="menu-item pending">DXDL Track 2 Planning <small>Coming soon</small></span>
+          <span class="menu-item pending">KLM Brix <small>Coming soon</small></span>
+          <span class="menu-item pending">KLM Aero <small>Coming soon</small></span>
+          <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
+        </div>
+      </details>
+      <details class="planner-group af-group">
+        <summary>AF DXDL <span class="nav-chevron" aria-hidden="true">⌄</span></summary>
+        <div class="planner-subitems">
+          <span class="menu-item pending">AF Digital Brand &amp; Design Direction <small>Coming soon</small></span>
+          <span class="menu-item pending">AF DXDL Track 2 Planning <small>Coming soon</small></span>
+          <span class="menu-item pending">AF Brix <small>Coming soon</small></span>
+          <span class="menu-item pending">AF Aero <small>Coming soon</small></span>
+          <span class="menu-item pending">AF Prototype <small>Coming soon</small></span>
+        </div>
+      </details>
+      <span class="menu-item pending hub-item">Main DXDL Hub <small>Coming soon</small></span>
     </nav>
     <p class="planner-overlay-footer">Questions about AFKL DXDL? Contact <a href="mailto:john-paul.henry@klm.com">John-Paul Henry</a></p>
   </div>
@@ -364,7 +386,7 @@ body.planner-menu-open{overflow:hidden}
     if(!overlay.classList.contains('is-open'))return;
     if(event.key==='Escape'){event.preventDefault();setOpen(false)}
     else if(event.key==='Tab'){
-      const focusables=Array.from(overlay.querySelectorAll('a[href],button:not([disabled])'));
+      const focusables=Array.from(overlay.querySelectorAll('a[href],button:not([disabled]),summary')).filter(el=>el.getClientRects().length);
       if(!focusables.length)return;
       const first=focusables[0],last=focusables[focusables.length-1];
       if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}
