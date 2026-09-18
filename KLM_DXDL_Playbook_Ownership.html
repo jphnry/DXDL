@@ -371,6 +371,10 @@ body.planner-menu-open{overflow:hidden}
   const toggle=document.querySelector('.planner-nav-toggle');
   const overlay=document.getElementById('planner-overlay');
   const close=overlay.querySelector('.planner-close');
+  const groups=Array.from(overlay.querySelectorAll('.planner-group'));
+  groups.forEach(group=>group.addEventListener('toggle',()=>{
+    if(group.open)groups.forEach(other=>{if(other!==group)other.open=false});
+  }));
   function setOpen(open){
     overlay.classList.toggle('is-open',open);
     overlay.setAttribute('aria-hidden',String(!open));
