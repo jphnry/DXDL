@@ -122,7 +122,7 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 .planner-close .burger span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
 .planner-overlay{position:fixed;inset:0;z-index:100;background:#00274638;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .35s cubic-bezier(.16,1,.3,1),visibility .35s}
 .planner-overlay.is-open{visibility:visible;opacity:1;pointer-events:auto}
-.planner-overlay-inner{position:absolute;inset:0 0 0 auto;width:min(520px,calc(100vw - 24px));height:100%;overflow-y:auto;padding:28px 32px 40px;border-radius:24px 0 0 24px;background:linear-gradient(155deg,#005496 0%,#002746 80%);box-shadow:-20px 0 50px #00274633;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.planner-overlay-inner{position:absolute;inset:0 0 0 auto;width:min(520px,calc(100vw - 24px));height:100%;display:flex;flex-direction:column;overflow-y:auto;padding:28px 32px 40px;border-radius:24px 0 0 24px;background:linear-gradient(155deg,#005496 0%,#002746 80%);box-shadow:-20px 0 50px #00274633;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
 .planner-overlay.is-open .planner-overlay-inner{transform:translateX(0)}
 .planner-overlay-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:clamp(36px,7vh,76px);font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:18px;font-weight:500}
 .planner-close{color:#fff}
@@ -133,6 +133,7 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 .planner-overlay-list .pending{color:#ffffffc2}
 .planner-overlay-list small{font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;white-space:nowrap;color:#D0E7F6}
 .planner-overlay-list .external-item{margin-top:24px;border-top:1px solid #ffffff33}
+.planner-overlay-footer{margin-top:auto;padding-top:32px;font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;line-height:1.5;color:#D0E7F6}
 body.planner-menu-open{overflow:hidden}
 @media(max-width:767px){.brand-top{flex-direction:column;align-items:stretch;gap:8px}.brand-top > p{flex:none;order:2}.planner-nav-toggle{align-self:flex-end;order:1;margin:0 0 12px}.planner-overlay-inner{width:calc(100vw - 20px);padding:20px 24px 36px}.planner-overlay-top{margin-bottom:36px}.planner-overlay-list .menu-item{padding:18px 0;font-size:22px}.planner-overlay-list small{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.planner-overlay,.planner-overlay-inner,.planner-nav-toggle .burger span,.planner-close .burger span{transition:none}}
@@ -154,6 +155,7 @@ body.planner-menu-open{overflow:hidden}
       <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
       <span class="menu-item pending external-item">Visit AF DXDL <small>Coming soon</small></span>
     </nav>
+    <p class="planner-overlay-footer">Questions about AFKL DXDL? Contact John-Paul Henry</p>
   </div>
 </div>
 <script id="board-data" type="application/json">
