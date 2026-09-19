@@ -157,40 +157,6 @@ body.planner-menu-open{overflow:hidden}
 @media(max-width:1720px){.site-topbar{margin-left:24px;margin-right:24px}}
 .mobile-title-break{display:none}
 @media(max-width:767px){.site-topbar{margin:12px 10px 0;padding:10px 16px;border-radius:20px}.site-topbar .brand-top{min-height:44px;flex-direction:row;align-items:center;flex-wrap:nowrap;gap:8px}.site-topbar .brand-top > p{flex:1 1 auto;min-width:0;order:0}.site-topbar .planner-nav-toggle{align-self:center;order:0;margin:0 0 0 auto;flex:none}.site-topbar .planner-nav-toggle > span:first-child{display:none}.mobile-title-break{display:initial}.page-shell{margin-top:32px}}
-/* Desktop: full-width horizontal navigation dropdown. Mobile retains the side drawer. */
-@media(min-width:768px){
-  .planner-overlay-inner{
-    inset:104px auto auto 50%;
-    width:min(calc(100vw - 48px),1660px);
-    height:auto;
-    max-height:calc(100vh - 128px);
-    display:block;
-    overflow-y:auto;
-    padding:24px 40px 32px;
-    border-radius:16px;
-    transform:translate(-50%,-24px);
-    transition:transform .35s cubic-bezier(.16,1,.3,1);
-  }
-  .planner-overlay.is-open .planner-overlay-inner{transform:translate(-50%,0)}
-  .planner-overlay-top{margin-bottom:20px}
-  .planner-overlay-list{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(180px,.48fr);
-    align-items:start;
-    gap:32px;
-  }
-  .planner-group.af-group{margin-top:0;padding-top:0;border-top:0}
-  .planner-group summary{padding:10px 0 14px}
-  .planner-group .planner-subitems{margin:0;padding-left:0}
-  .planner-overlay-list .planner-subitems .menu-item{padding:9px 0;font-size:17px}
-  .planner-overlay-list .hub-item{
-    align-self:stretch;
-    margin-top:0;
-    padding:12px 0 12px 32px;
-    border-left:1px solid #ffffff33;
-  }
-  .planner-overlay-footer{margin-top:24px;padding-top:20px}
-}
 </style>
 </head>
 <body>
