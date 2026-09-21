@@ -130,6 +130,9 @@ body::before{content:"";position:absolute;z-index:0;top:-120px;left:40%;transfor
 .planner-overlay-list{display:flex;flex-direction:column}
 .planner-overlay-list .menu-item{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:17px 0;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:24px;line-height:1.2}
 .planner-overlay-list .current{color:#fff}
+.planner-overlay-list .prototype-link{color:#fff;text-decoration:none}
+.planner-overlay-list .prototype-link:hover{text-decoration:underline;text-underline-offset:4px}
+.planner-overlay-list .prototype-link:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .planner-overlay-list .pending{color:#ffffffc2}
 .planner-overlay-list small{font-family:"KLM Universal Sans Text","Helvetica Neue",Arial,sans-serif;font-size:12px;white-space:nowrap;color:#D0E7F6}
 .planner-group summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;list-style:none;cursor:pointer;font-family:"KLM Universal Sans Display","Helvetica Neue",Arial,sans-serif;font-size:24px;font-weight:500;color:#fff}
@@ -178,7 +181,7 @@ body.planner-menu-open{overflow:hidden}
           <span class="menu-item pending">DXDL Track 2 Planning <small>Coming soon</small></span>
           <span class="menu-item pending">KLM Brix <small>Coming soon</small></span>
           <span class="menu-item pending">KLM Aero <small>Coming soon</small></span>
-          <span class="menu-item pending">KLM Prototype <small>Coming soon</small></span>
+          <a class="menu-item prototype-link" href="https://afkl-dxdl.github.io/kl/index.html">KLM Prototype <small>Visit prototype ↗</small></a>
         </div>
       </details>
       <details class="planner-group af-group">
@@ -188,7 +191,7 @@ body.planner-menu-open{overflow:hidden}
           <span class="menu-item pending">AF DXDL Track 2 Planning <small>Coming soon</small></span>
           <span class="menu-item pending">AF Brix <small>Coming soon</small></span>
           <span class="menu-item pending">AF Aero <small>Coming soon</small></span>
-          <span class="menu-item pending">AF Prototype <small>Coming soon</small></span>
+          <a class="menu-item prototype-link" href="https://afkl-dxdl.github.io/af/index.html">AF Prototype <small>Visit prototype ↗</small></a>
         </div>
       </details>
       <span class="menu-item pending hub-item">Main DXDL Hub <small>Coming soon</small></span>
